@@ -2,20 +2,20 @@
 
 This Python script scrapes product information from the Jumia Uganda website, specifically from the Phones & Tablets category. It collects product names, prices, and links to individual product pages, then saves the data to a CSV file.
 
-# Features
+## Features
 
 Scrapes multiple pages of products from Jumia Uganda's Phones & Tablets category.
 Extracts product names, prices, and links.
 Saves the scraped data to a CSV file (scraped_products.csv).
 Utilizes ScraperAPI to bypass anti-scraping measures.
 
-# Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
 Python 3.x
 
-# Required libraries:
+## Required libraries
 
 requests
 beautifulsoup4
@@ -24,22 +24,28 @@ time
 scraperapi_sdk
 python-dotenv
 
-# You can install the required libraries using:
+## You can install the required libraries using
 
+```bash
 pip install requests beautifulsoup4 scraperapi-sdk python-dotenv
+```
 
-# Installation
+## Installation
 
 - Clone the repository:
 
+```bash
 git clone https://github.com/yourusername/jumia-ug-scraper.git
 cd jumia-ug-scraper
+```
 
-# Install the required dependencies:
+## Install the required dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-# Setting up the API Key
+## Setting up the API Key
 
 This script uses ScraperAPI to manage requests and bypass anti-scraping measures. Follow these steps to set up your API key:
 
@@ -52,20 +58,25 @@ This script uses ScraperAPI to manage requests and bypass anti-scraping measures
 - Add Your API Key
   Add your ScraperAPI key to the .env file as follows:
 
+```bash
 SCRAPERAPI_KEY=your_api_key_here
+```
 
-# Security Note
+## Security Note
 
 Make sure to add .env to your .gitignore file to prevent the API key from being exposed:
 
+```txt
 .env
+```
+
 Alternatively, you can set the API key as an environment variable:
 
-# Usage
+## Usage
 
 Ensure your .env file is correctly set up with your ScraperAPI key.
 
-# Output
+## Output
 
 The output CSV file (scraped_products.csv) will contain the following columns:
 
@@ -73,7 +84,7 @@ Name: Product name
 Price: Product price
 Link: URL to the product page on Jumia
 
-# How It Works
+## How It Works
 
 Scraping
 
@@ -90,9 +101,19 @@ Error Handling
 
 If a request fails or an exception occurs, an error message is displayed, and the scraper stops.
 
-# Contributing
+## Contributing
+
 Contributions are welcome! If you find any bugs or have feature requests, please open an issue or submit a pull request.
 
-# License
+## Environment Variables (.env)
+
+Example of a complete `.env` file structure:
+
+```bash
+# ScraperAPI Key (required)
+SCRAPERAPI_KEY=your_api_key_here
+```
+
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
